@@ -45,7 +45,8 @@ public static void main(String[] args) {
 private static void printStartLastNameBCondition(List<Person> person, Predicate<Person> condition, Consumer<Person> consume) {
 	for(Person p : person) {
 		if(condition.test(p)) {
-			consume.accept(p);		}
+			consume.accept(p);		
+			}
 		
 	}
 }
